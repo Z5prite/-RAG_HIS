@@ -1,0 +1,30 @@
+llm:
+  api_key: "sk-xxxxxxxxxxxxxxxxxxxxxxxx"                        # ⚠️ [必填] 替换为你的 DeepSeek API Key
+  base_url: "https://api.deepseek.com/v1"
+  model_name: "deepseek-chat"
+  temperature: 0.3
+  max_tokens: 1500
+
+embedding:
+  model_name: "BAAI/bge-small-zh-v1.5"
+  device: "cpu"
+
+chroma:
+  persist_dir: "../data/chroma"
+  kb_collection: "medical_kb"
+  triage_collection: "triage_kb"
+  top_k_kb: 4
+  top_k_triage: 3
+  chunk_size: 500
+  chunk_overlap: 80
+
+database:
+  sqlite_path: "../data/his_rag.db"
+
+data:
+  knowledge_base_dir: "../data/knowledge_base"
+  triage_kb_dir: "../data/medical-triage-kb"
+
+server:
+  host: "127.0.0.1"
+  port: 8012
