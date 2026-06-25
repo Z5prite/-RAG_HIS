@@ -41,8 +41,10 @@ frontend/yarn-debug.log*
 frontend/yarn-error.log*
 frontend/pnpm-debug.log*
 
-# Database & Chroma Data (DO NOT COMMIT KNOWLEDGE BASE DATA)
-data/
+# Database & Chroma Data (DO NOT COMMIT LARGE VECTORS)
+data/chroma/
+data/runtime/
+data/uploads/
 *.db
 *.sqlite3
 

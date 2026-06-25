@@ -9,6 +9,14 @@
 
 > **声明**：本项目为 MVP (Minimum Viable Product) 演示版本，基于轻量级 FastAPI + Vue3 架构，剥离了企业级微服务（Spring Boot, MySQL, Redis），以实现**开箱即用 (Clone and Run)**。
 
+## 📸 系统截图 (Screenshots)
+
+<div align="center">
+  <!-- 请在此处替换为你自己的截图路径或 URL -->
+  <img src="https://via.placeholder.com/800x450.png?text=Login+Screen+Preview" alt="极简高定登录页" width="48%">
+  <img src="https://via.placeholder.com/800x450.png?text=Chunk+Viewer+Preview" alt="知识库区块监视器" width="48%">
+</div>
+
 ## 🌟 核心功能
 
 - **🚀 智能问答与分诊建议**：基于 DeepSeek 大模型推理，严谨解答疾病科普，并在触发“红旗规则”时强制建议就医。
@@ -56,10 +64,16 @@ docker compose up -d --build
 
 如果你希望修改代码进行二次开发，可以按照以下步骤分别运行前后端：
 
-### 后端 (Backend)
+### 后端 (Backend) & 数据初始化
 ```bash
+# 1. 安装依赖
 cd backend
 pip install -r requirements.txt
+
+# 2. 初始化知识库向量数据 (重要！否则知识库为空)
+python ../scripts/ingest.py
+
+# 3. 启动服务
 python main.py
 # 后端服务将运行在 http://localhost:8012
 ```
