@@ -1,4 +1,4 @@
-# ⚕️ HIS RAG - 社区医院智能知识库与辅助诊疗系统
+# ⚕️ HIS RAG - 医院智能知识库与辅助诊疗系统
 
 ![Vue3](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vue.js&logoColor=4FC08D)
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
@@ -93,6 +93,13 @@ npm run dev
 在浏览器打开前端页面后，可使用以下测试账号登录：
 - **管理员** (拥有上传文献、查看 Chunk 权限)：`admin` / `admin`
 - **医生端** (仅可进行多轮问诊交互)：`user` / `user`
+## 系统预览
+  登录端
+<img width="2229" height="1152" alt="image" src="https://github.com/user-attachments/assets/2ca71009-3c2c-4383-86e2-8259218eb8c0" />
+  用户端
+<img width="2229" height="1152" alt="image" src="https://github.com/user-attachments/assets/60fa061b-d04a-4067-9ee0-58ff9ff74b4a" />
+  管理员
+<img width="2229" height="1152" alt="image" src="https://github.com/user-attachments/assets/19a9859a-25b1-41b0-9321-55d384097c7d" />
 
 ## 📄 开源协议
 本项目采用 [MIT License](LICENSE) 开源协议。基于本系统提供的任何医疗建议均仅供**技术参考**，不得作为最终临床诊断依据。
