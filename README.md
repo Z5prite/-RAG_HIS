@@ -9,13 +9,7 @@
 
 > **声明**：本项目为 MVP (Minimum Viable Product) 演示版本，基于轻量级 FastAPI + Vue3 架构，剥离了企业级微服务（Spring Boot, MySQL, Redis），以实现**开箱即用 (Clone and Run)**。
 
-## 📸 系统截图 (Screenshots)
 
-<div align="center">
-  <!-- 请在此处替换为你自己的截图路径或 URL -->
-  <img src="https://via.placeholder.com/800x450.png?text=Login+Screen+Preview" alt="极简高定登录页" width="48%">
-  <img src="https://via.placeholder.com/800x450.png?text=Chunk+Viewer+Preview" alt="知识库区块监视器" width="48%">
-</div>
 
 ## 🌟 核心功能
 
@@ -23,7 +17,7 @@
 - **📚 知识库无缝接入**：管理员可直接在网页端上传 PDF / Word / MD 医疗指南，系统自动进行层级解析与向量化（Chunking + Embedding）。
 - **🔍 精准文献溯源**：每一条 AI 生成的医疗建议，均会标注引用来源（段落级溯源），保障医疗严肃性与可信度。
 - **🔬 知识区块监视器 (Chunk Viewer)**：后台数据透明化，管理员可实时可视化检视 Chroma 数据库内的切割区块。
-- **✨ 极简医疗科技感 UI**：纯手工编写的“Bio-Tech Precision”视觉系统，包含毛玻璃质感、弥散渐变、微动效交互。
+
 
 ## 🛠️ 技术栈 (Demo Edition)
 
