@@ -89,7 +89,7 @@ npm run dev
 - **医生端** (仅可进行多轮问诊交互)：`user` / `user`
 ## 系统预览
   登录端
-<img width="2229" height="1152" alt="image" src="https://github.com/user-attachments/assets/2ca71009-3c2c-4383-86e2-8259218eb8c0" />
+<img width="2229" height="1152" alt="image" src="C:\Users\86159\Desktop\用户端" />
   用户端
 <img width="2229" height="1152" alt="image" src="https://github.com/user-attachments/assets/60fa061b-d04a-4067-9ee0-58ff9ff74b4a" />
   管理员
