@@ -21,7 +21,7 @@
 
 ## 🛠️ 技术栈 (Demo Edition)
 
-- **前端**：Vue 3 + Vite + 原生手写 CSS (零 UI 框架依赖)
+- **前端**：Vue 3 + Vite
 - **后端**：Python 3.10 + FastAPI + Uvicorn
 - **大模型 (LLM)**：DeepSeek API
 - **嵌入模型 (Embedding)**：`BAAI/bge-small-zh-v1.5`
