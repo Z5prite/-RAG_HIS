@@ -8,8 +8,8 @@ from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 
-from app.services.database import add_message, create_session, list_messages
-from app.services.rag_chain import generate_rag_response
+from app.storage.sqlite_history import add_message, create_session, list_messages
+from app.chains.medical_rag import generate_rag_response
 
 logger = logging.getLogger(__name__)
 router = APIRouter()
@@ -74,4 +74,12 @@ async def chat_endpoint(request: ChatRequest):
             
         yield "data: [DONE]\n\n"
 
-    return StreamingResponse(sse_generator(), media_type="text/event-stream")
+    return StreamingResponse(
+        sse_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no"
+        }
+    )

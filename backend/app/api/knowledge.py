@@ -6,8 +6,8 @@ from typing import Dict, Any
 from fastapi import APIRouter, UploadFile, File, Form, Depends, HTTPException, status
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 
-from app.services.chunker import extract_text_from_file, chunk_markdown, chunk_text
-from app.services.vector_store import vector_store
+from app.document_loaders.text_splitter import extract_text_from_file, chunk_markdown, chunk_text
+from app.vectorstores.chroma_store import vector_store
 
 logger = logging.getLogger(__name__)
 router = APIRouter()

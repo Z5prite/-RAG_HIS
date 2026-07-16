@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 
-from app.services.database import list_sessions, list_messages, delete_session
+from app.storage.sqlite_history import list_sessions, list_messages, delete_session
 
 router = APIRouter()
 

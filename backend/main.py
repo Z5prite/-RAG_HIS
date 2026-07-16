@@ -5,8 +5,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import SETTINGS
-from app.services.database import init_db
-from app.services.embedding import embedding_service
+from app.storage.sqlite_history import init_db
+from app.embeddings.bge_embeddings import embedding_service
 from app.api.chat import router as chat_router
 from app.api.session import router as session_router
 from app.api.knowledge import router as knowledge_router

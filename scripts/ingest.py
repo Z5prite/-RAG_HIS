@@ -8,8 +8,8 @@ backend_dir = Path(__file__).resolve().parents[1] / "backend"
 sys.path.append(str(backend_dir))
 
 from app.core.config import SETTINGS
-from app.services.chunker import chunk_markdown
-from app.services.vector_store import vector_store
+from app.document_loaders.text_splitter import chunk_markdown
+from app.vectorstores.chroma_store import vector_store
 
 def process_directory(directory: Path, collection_name: str):
     if not directory.exists():
